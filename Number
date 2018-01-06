@@ -1,0 +1,26 @@
+package main;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		System.out.println("Enter a number.");
+		Scanner in = new Scanner(System.in);
+		int firstnumber = 0;
+		while(true) {
+			if (in.hasNextInt()) {
+				firstnumber = in.nextInt();
+				if (firstnumber == -1) {
+					in.close();
+					break;
+				}
+			}else {
+				System.out.println("Not a number.");
+				in.next();
+			}
+			System.out.println("Please input next number.");
+			in.reset();	
+		}
+	}
+}
