@@ -1,0 +1,41 @@
+package magicCard;
+
+public class MagicCard {
+	
+	Object[] obj = new Object[]{"Party Crasher", 5, "Red", 3, "Creature", 3, "\"Haste. You can attack with Party Crasher once each combat during each opponent's turn\"", "\"No rest. No mercy. No reservations.\""};
+	String name;
+	int concost;
+	String color;
+	int strength;
+	String type;
+	int toughness;
+	String ability;
+	String flavortext;
+	public MagicCard(String string, int i, String string2, int j, String string3, int k, String string4, String string5) {
+	this.name= "Party Crasher";
+	this.concost= 5;
+	this.color= "Red";
+	this.strength =3;
+	this.type= "Creature";
+	this.toughness =3;
+	this.ability= "\"Haste. You can attack with Party Crasher once each combat during each opponent's turn\"";
+	this.flavortext = "\"No rest. No mercy. No reservations.\""	;	}}
+  
+  \\Put this in another main class\\
+  
+  package magicCard;
+
+public class Main {
+
+	public static void main(String[] args) {
+		MagicCard mtg = new MagicCard("Party Crasher", 5, "Red", 3, "Creature", 3, "\"Haste. You can attack with Party Crasher once each combat during each opponent's turn\"", "\"No rest. No mercy. No reservations.\"");
+		System.out.print("Card name is " + mtg.name + ". \r\n"); 
+		System.out.print("Converted mana cost is " + mtg.concost + ". \r\n");
+		System.out.print("Card color is " + mtg.color + ". \r\n");
+		System.out.print("Card strength is " + mtg.strength + ". \r\n");
+		System.out.print("Card toughness is " + mtg.toughness + ". \r\n");
+		System.out.print("Card type is " + mtg.type + ". \r\n");
+		System.out.print("Card ablility is " + mtg.ability + ". \r\n");
+		System.out.print("Card flavor text is " + mtg.flavortext + ".");
+	}
+}
